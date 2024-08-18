@@ -71,8 +71,8 @@ let questions = [
         },
         {
             question: "Which property is used to control the spacing between elements?",
-            options: ["margin", "padding", "border", "spacing"],
-            correctAnswer: "padding"
+            options: ["padding", "border", "spacing", "margin"],
+            correctAnswer: "margin"
         },
         {
             question: "How do you apply a CSS style to all ",
@@ -92,7 +92,7 @@ let questions = [
         {
             question: "How do you select an element with the ID 'header'?",
             options: ["#header", ".header", "*header", "header"],
-            correctAnswer: ""
+            correctAnswer: "header"
         },
         {
             question: "Which selector matches all <a> elements that have a title attribute?",
