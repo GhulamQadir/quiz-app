@@ -92,7 +92,7 @@ let questions = [
         {
             question: "How do you select an element with the ID 'header'?",
             options: ["#header", ".header", "*header", "header"],
-            correctAnswer: "header"
+            correctAnswer: "#header"
         },
         {
             question: "Which selector matches all <a> elements that have a title attribute?",
