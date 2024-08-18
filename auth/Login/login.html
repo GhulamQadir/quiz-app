@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../loader_alert.css">
+</head>
+
+<body>
+    <div id="loginFormDiv">
+        <div id="loader"></div>
+        <div id="alert">
+            <span id="closebtn" onclick="closeErrorAlert()">&times;</span>
+            <span id="error_message"></span>
+        </div>
+        <form onsubmit="login(event)">
+            <h1 class="heading">Login page</h1>
+            <input type="email" placeholder="Enter your email" id="email"><br>
+            <input type="password" placeholder="Enter your password" id="password"><br>
+            <div id="show_password_div">
+                <input id="checkBox" type="checkbox" onclick="showAndHidePassword()"><span id="show_password_text">Show
+                    Password</span>
+                <br>
+            </div>
+            <button id="login_btn" onclick="login(event)">Login</button><br>
+            <p id="dont_have_an_account">Don't have an account? <a id="signUp_link"
+                    href="../signUp/signUp.html">SignUp</a></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

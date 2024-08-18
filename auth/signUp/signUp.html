@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="signUp.css">
+<link rel="stylesheet" href="../loader_alert.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div id="signUpFormDiv">
+        <div id="loader"></div>
+        <div id="alert">
+            <span id="closebtn" onclick="closeErrorAlert()">&times;</span>
+            <span id="error_message"></span>
+        </div>
+        <form method="post" onsubmit="signUp(event)">
+            <h1 class="heading">Create Account</h1>
+            <input type="name" id="firstName" placeholder="Enter your first name"><br>
+            <input type="name" id="lastName" placeholder="Enter your last name"><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <div id="show_password_div">
+                <input id="checkBox" type="checkbox" onclick="showAndHidePassword()"><span id="show_password_text">Show
+                    Password</span>
+                <br>
+            </div>
+            <button id="sign_up_btn" onclick="signUp(event)">SignUp</button><br>
+        </form>
+        <p id="already_have_an_account">Already have an account?
+            <a id="login_link" href="../Login/login.html"> Login</a>
+        </p>
+    </div>
+
+    <!-- <div class="mainCont">
+        <div class="imgDiv"><img class="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2RLOBO8DYvk8aAUNEs6DJzCJzlgHT7HfAg&s"
+                alt="">
+        </div>
+        <div class="imgDiv"><img class="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2RLOBO8DYvk8aAUNEs6DJzCJzlgHT7HfAg&s"
+                alt="">
+        </div>
+        <div class="imgDiv"><img class="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2RLOBO8DYvk8aAUNEs6DJzCJzlgHT7HfAg&s"
+                alt="">
+        </div>
+
+        <div class="imgDiv"><img class="img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2RLOBO8DYvk8aAUNEs6DJzCJzlgHT7HfAg&s"
+                alt="">
+        </div>
+    </div> -->
+    <script src="signUp.js"></script>
+</body>
+
+</html>

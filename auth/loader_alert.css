@@ -1,0 +1,80 @@
+/* loader styling */
+#loader {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(0, -50%);
+  padding: 10px;
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Alert box styling */
+#alert {
+  padding: 20px;
+  background-color: white;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  display: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 15%;
+  width: 60%;
+}
+
+/* Alert box close button styling */
+#closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#error_message {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsiveness of Sign Up Form Div */
+@media screen and (max-width: 850px) {
+  #loader {
+    width: 15px;
+    height: 15px;
+  }
+}

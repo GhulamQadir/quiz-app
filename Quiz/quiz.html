@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+
+    <p id="quizHeading"></p>
+
+    <div id="questionsDiv">
+        <div class="upperDiv">
+            <div class="question_count_div">
+                <p id="question_count"></p>
+            </div>
+            <div class="timerDiv">
+                <p id="time">01:00</p>
+            </div>
+        </div>
+        <p id="question"></p>
+        <div class="optionsDiv">
+            <label>
+                <input onclick="enableNextBtn()" value="0" name="options" type="radio">
+                <span id="option1"></span>
+            </label>
+        </div>
+        <div class="optionsDiv">
+            <label>
+                <input onclick="enableNextBtn()" value="1" name="options" type="radio">
+                <span id="option2"></span>
+            </label>
+        </div>
+        <div class="optionsDiv">
+            <label>
+                <input onclick="enableNextBtn()" value="2" name="options" type="radio">
+                <span id="option3"></span>
+            </label>
+        </div>
+        <div class="optionsDiv">
+            <label>
+                <input onclick="enableNextBtn()" value="3" name="options" type="radio">
+                <span id="option4"></span>
+            </label>
+        </div>
+        <div id="nextBtnDiv">
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+
+    <div id="resultDiv">
+        <div id="scoreDiv">
+            <p id="score">Score: </p>
+            <p id="percentage">Percentage: </p>
+            <p id="grade">Grade: </p>
+        </div>
+        <div id="showResultQuestions"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>

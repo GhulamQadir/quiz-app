@@ -1,0 +1,141 @@
+#loginFormDiv {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  position: relative;
+  background-color: #6a95d7;
+}
+form {
+  margin-top: 70px;
+}
+.heading {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0px 20px 0px;
+  color: white;
+}
+
+/* input fields styling */
+input {
+  height: 30px;
+  width: 50%;
+  margin-top: 30px;
+  border: 0px;
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 16px;
+}
+
+/* autofill input fields styling */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #6a95d7 inset !important;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* input on focus styling */
+input:focus {
+  outline: none;
+}
+
+/* placeholder styling */
+::placeholder {
+  font-weight: 500;
+  color: white;
+}
+/* Show password div styling */
+#show_password_div {
+  width: 50%;
+  margin: auto;
+  text-align: start;
+}
+
+/* show and hide password checkbox styling */
+#checkBox {
+  height: 13px !important;
+  width: 15px;
+}
+/* Show password text styling */
+#show_password_text {
+  padding-left: 4px;
+  font-size: 12.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+#login_btn {
+  padding: 10px 30px 10px 30px;
+  border-radius: 45px;
+  font-weight: 700;
+  border: none;
+  background-color: white;
+  font-size: 17px;
+  margin: 10px 0px 10px 0px;
+}
+
+#login_btn:hover {
+  background-color: rgb(224, 224, 238);
+  transition: all;
+}
+
+/* dont have an account(last line) styling */
+#dont_have_an_account {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Login link styling */
+#signUp_link {
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsiveness of Login Form Div */
+@media screen and (max-width: 850px) {
+  #loginFormDiv {
+    width: 70%;
+  }
+  input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #loginFormDiv {
+    width: 80%;
+  }
+  input {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #loginFormDiv {
+    width: 85%;
+  }
+  input {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #loginFormDiv {
+    width: 90%;
+  }
+  input {
+    width: 60%;
+  }
+}
+
+/* ends here */
